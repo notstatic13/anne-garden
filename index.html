@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden of Eden - A Romantic Journey</title>
+    <meta name="description" content="A romantic 3D interactive garden experience">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&family=Crimson+Text:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">Garden of Eden</h1>
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Entering paradise...</p>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <header class="header">
+            <h1 class="main-title">Garden of Eden</h1>
+            <p class="subtitle">A romantic journey through paradise</p>
+        </header>
+
+        <div class="garden-container">
+            <canvas id="garden-canvas"></canvas>
+            
+            <div class="interactive-elements">
+                <div class="floating-hearts">
+                    <div class="heart heart-1">❤</div>
+                    <div class="heart heart-2">💕</div>
+                    <div class="heart heart-3">💖</div>
+                    <div class="heart heart-4">💝</div>
+                    <div class="heart heart-5">💗</div>
+                </div>
+                
+                <div class="romantic-messages">
+                    <div class="message message-1">Every flower blooms in your presence</div>
+                    <div class="message message-2">You make my world beautiful</div>
+                    <div class="message message-3">Forever yours, in this garden of love</div>
+                </div>
+            </div>
+            
+            <!-- Custom flower cursor -->
+            <div class="flower-cursor" id="flower-cursor"></div>
+            
+            <!-- Bloom indicator -->
+            <div class="bloom-indicator" id="bloom-indicator">
+                🌸 Hover over flowers to make them bloom!
+            </div>
+        </div>
+
+
+
+        <div class="romantic-quotes">
+            <div class="quote-container">
+                <p class="quote">"In the garden of my heart, you are the most beautiful flower."</p>
+                <span class="quote-author">- Love</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
